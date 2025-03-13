@@ -18,12 +18,17 @@ public class DVD implements IDocument {
 
     @Override
     public int numero() {
-        return 0;
+        return numero;
     }
 
     @Override
     public void reserver(Abonne a) throws ReservationException {
-
+        synchronized (this) {
+            if (empruntePar != null || (reservePar != null && reservePar != a)) {
+                throw new ReservationException("Document non disponible");
+            }
+            reservePar = a;
+        }
     }
 
     // 类似Livre的实现，添加年龄检查
@@ -43,7 +48,15 @@ public class DVD implements IDocument {
 
     @Override
     public void retourner() {
+        synchronized (this) {
+            empruntePar = null;
+            reservePar = null;
+        }
+    }
 
+
+    private boolean isAdulte(){
+        return adulte;
     }
     // 其他方法类似Livre
 }
