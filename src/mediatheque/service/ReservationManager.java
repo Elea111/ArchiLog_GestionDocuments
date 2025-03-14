@@ -1,9 +1,9 @@
 package mediatheque.service;
 
-import mediatheque.model.Abonne;
-import mediatheque.model.DVD;
-import mediatheque.model.IDocument;
-import mediatheque.model.Livre;
+import mediatheque.abonne.Abonne;
+import mediatheque.documents.DVD;
+import mediatheque.abonne.IDocument;
+import mediatheque.documents.Livre;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;

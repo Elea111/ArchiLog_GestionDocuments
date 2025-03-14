@@ -2,7 +2,7 @@ package mediatheque.server;
 
 import java.io.*;
 
-import mediatheque.model.IDocument;
+import mediatheque.abonne.IDocument;
 import java.net.Socket;
 
 import static java.lang.System.out;

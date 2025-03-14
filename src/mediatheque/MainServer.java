@@ -1,9 +1,9 @@
 package mediatheque;
 
-import mediatheque.model.Abonne;
-import mediatheque.model.DVD;
-import mediatheque.model.IDocument;
-import mediatheque.model.Livre;
+import mediatheque.abonne.Abonne;
+import mediatheque.documents.DVD;
+import mediatheque.abonne.IDocument;
+import mediatheque.documents.Livre;
 import mediatheque.server.EmpruntServer;
 import mediatheque.server.Mediatheque;
 import mediatheque.server.ReservationServer;
@@ -30,3 +30,4 @@ public class MainServer {
         new Thread(new RetourServer(m)).start();
     }
 }
+

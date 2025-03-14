@@ -1,5 +1,7 @@
-package mediatheque.model;
+package mediatheque.documents;
 
+import mediatheque.abonne.IDocument;
+import mediatheque.abonne.Abonne;
 import mediatheque.exception.EmpruntException;
 import mediatheque.exception.ReservationException;
 

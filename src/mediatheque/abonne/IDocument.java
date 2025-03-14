@@ -1,4 +1,4 @@
-package mediatheque.model;
+package mediatheque.abonne;
 
 import mediatheque.exception.EmpruntException;
 import mediatheque.exception.ReservationException;

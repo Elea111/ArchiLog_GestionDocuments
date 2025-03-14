@@ -1,4 +1,4 @@
-package mediatheque.model;
+package mediatheque.abonne;
 
 import java.time.LocalDate;
 import java.time.Period;

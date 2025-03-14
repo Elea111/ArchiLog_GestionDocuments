@@ -1,7 +1,7 @@
 package mediatheque.server;
 
-import mediatheque.model.Abonne;
-import mediatheque.model.IDocument;
+import mediatheque.abonne.Abonne;
+import mediatheque.abonne.IDocument;
 import java.util.List;
 
 public class Mediatheque {
